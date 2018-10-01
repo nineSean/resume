@@ -1,16 +1,21 @@
+/* reset */
 *{
   margin: 0;
   padding: 0;
+}
+body{
+  color: #555;
+  font: 16px/1 microsoft-yahei, sans-serif;
+}
+ul,ol{
   list-style: none;
+}
+a{
+  color: #555;
   text-decoration: none;
-  color: #555;
-  font-family: microsoft-yahei,sans-serif;
 }
 
-a:visited{
-  color: #555;
-}
-
+/* common */
 .pos-r{
   position: relative;
 }
@@ -23,7 +28,12 @@ a:visited{
 .clearfix{
   zoom: 1;
 }
+h3>a{
+  color: #616;
+  cursor: pointer;
+}
 
+/* main */
 .page{
   width: 960px;
   margin: 20px auto;
@@ -45,31 +55,50 @@ header > div{
   height: 150px;
   margin: 0 12px;
   border-radius: 50%;
-  background-color: #000;
+  box-shadow: 0 0 1px 2px #ccc;
+  background: no-repeat center center url(http://oe68k88iq.bkt.clouddn.com/sean.jpg);
+  background-size: contain;
+  transition: transform 1.5s;
+  animation: rotate 1.5s 1;
+}
+
+@keyframes rotate{
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.avatar:hover{
+  transform: rotate(360deg);
 }
 
 .job{
-  /* position: relative; */
   height: 150px;
   margin-left: 28px;
 }
 
 .job > .wrapper{
-  padding-top: 24px;
-/*   position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
-.job p:nth-child(1){
+.job h1{
+  margin-bottom: 10px;
+  color: #000;
   font-size: 40px;
-  letter-spacing: 50px;
+  font-weight: lighter;
+  text-align: center;
+  white-space: pre-wrap;
 }
 
-.job p:nth-child(2){
-  font-size: 20px;
+.job h2{
+  color: #000;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
   letter-spacing: 3px;
-  font-weight: 550;
 }
 
 .personalinfo{
@@ -78,19 +107,21 @@ header > div{
 }
 
 .personalinfo-header{
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #345;
 }
 
 .personalinfo-content{
-  line-height: 25px;
+  line-height: 30px;
   padding-right: 160px;
 }
 
 .personalinfo-content > li > span{
+  display: inline-block;
+  margin-right: 10px;
   color: #000;
   font-size: 18px;
   font-weight: 900;
@@ -103,9 +134,12 @@ header > div{
 .personalinfo-content > li:last-child div{
   position: absolute;
   top: 0;
-  left: 40px;
+  left: 48px;
 }
 
+.personalinfo-content > li:last-child a{
+  color: #616;
+}
 
 main{
   margin-top: 38px;
@@ -113,7 +147,7 @@ main{
 
 .portfolio-header,.intro-header,.skills-header{
   color: #000;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   width: 400px;
   padding-bottom: 8px;
@@ -122,7 +156,7 @@ main{
 }
 
 .portfolio-content{
-  border-left: 1px solid #000;
+  border-left: 1px solid #345;
   padding-left: 75px;
 }
 
@@ -136,15 +170,15 @@ main{
 .circle{
   position: absolute;
   left: -81px;
-  top: 8px;
+  top: 6px;
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #345;
 }
 
 .project-header{
-  font-size: 18px;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -173,11 +207,10 @@ footer{
   height: 20px;
   border: 1px solid #000;
   border-radius: 50%;
-  font-weight: 900;
-  font-size: 10px;
+  font-size: 18px;
   font-family: sans-serif;
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .intro-content section{
@@ -188,43 +221,3 @@ footer{
   float: right;
   width: 400px;
 }
-
-.skills-content > li{
-  float: left;
-  width: 200px;
-  height: 100px;
-  box-sizing: border-box;
-}
-
-.skills-content > li:nth-child(even){
-  border-left: 1px solid #ddd;
-}
-
-.skill{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30px;
-  color: #000;
-  font-weight: bold;
-  
-}
-
-.skill-bar{
-  width: 100px;
-  height: 10px;
-  margin: 50px auto;
-  border: 1px solid #555;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.fill-h5c3{
-  width: 65px;
-  height: 10px;
-  background-color: #f99;
-}
-
-
-
-
