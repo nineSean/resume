@@ -41,6 +41,7 @@ h3>a{
   padding: 76px 40px 50px 46px;
   box-sizing: border-box;
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+  background: url(./handmadepaper.png);
 }
 
 header{
@@ -57,7 +58,7 @@ header > div{
   margin: 0 12px;
   border-radius: 50%;
   box-shadow: 0 0 1px 2px #ccc;
-  background: no-repeat center center url(http://oe68k88iq.bkt.clouddn.com/sean.jpg);
+  background: no-repeat center center url(http://oe68k88iq.bkt.clouddn.com/sean.jpg) #fff;
   background-size: contain;
   transition: transform 1.5s;
   animation: rotate 1.5s 1;
@@ -164,8 +165,10 @@ main{
 .portfolio-content > .line-cover{
   position: absolute;
   left: -3px;
-  height: 5px;
-  border: 3px solid #fff;
+  top: -1px;
+  height: 12px;
+  width: 5px;
+  background: url(./handmadepaper.png);
 }
 
 .circle{
