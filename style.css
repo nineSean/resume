@@ -2,10 +2,11 @@
 *{
   margin: 0;
   padding: 0;
+  letter-spacing: .3px;
 }
 body{
-  color: #555;
-  font: 16px/1 microsoft-yahei, sans-serif;
+  color: #333;
+  font: 16px/1.5 microsoft-yahei, sans-serif;
 }
 ul,ol{
   list-style: none;
@@ -163,14 +164,14 @@ main{
 .portfolio-content > .line-cover{
   position: absolute;
   left: -3px;
-  height: 4px;
-  border: 2px solid #fff;
+  height: 5px;
+  border: 3px solid #fff;
 }
 
 .circle{
   position: absolute;
   left: -81px;
-  top: 6px;
+  top: 11px;
   width: 11px;
   height: 11px;
   border-radius: 50%;
@@ -179,11 +180,11 @@ main{
 
 .project-header{
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .project-content{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 footer{
@@ -215,6 +216,11 @@ footer{
 
 .intro-content section{
   padding: 0 0 15px 80px;
+}
+
+.intro-content section>p{
+  white-space: pre-line;
+  letter-spacing: 1px;
 }
 
 .skills{

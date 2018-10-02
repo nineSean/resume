@@ -386,7 +386,7 @@ function RadarChart(id, data, options) {
 // ////////////////////////////////////////////////////////////
 
 var margin = {
-    top: 10,
+    top: 60,
     right: 100,
     bottom: 100,
     left: 100
