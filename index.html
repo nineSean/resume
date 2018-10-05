@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>resume</title>
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./style.css" />
   <base target="_blank">
 </head>
 
@@ -123,14 +123,11 @@
         <div class="intro-content">
           <section class="pos-r">
             <div class="decoration">+</div>
-            <p>  12年机电专业毕业后从事前端非相关性工作，源于兴趣16年9月自学前端至今。</p>
+            <p> 12年机电专业毕业后从事前端非相关性工作，源于兴趣16年9月自学前端至今。</p>
           </section>
           <section class="pos-r">
             <div class="decoration">+</div>
-            <p>自学期间，碰到过很多坎，其中ajax由于涉及到服务端响应数据，对于当时来说感觉是一个黑箱，一直理解不了；感谢NodeJS，自己用JS实现了一个简单服务器把逻辑跑通。
-              VIM的编辑哲学与无鼠标操作吸引了我，为了锻炼自己不畏难的能力，在一次入坑失败后掌握。
-              有一定基础后开始捡起英语，锻炼自己阅读英文文档、资料，目前基本能通过英语google与阅读文档。
-              期间走了很多弯路，庆幸始终坚持至今，确定了自己的追求。
+            <p>自学期间，碰到过很多坎，其中ajax由于涉及到服务端响应数据，对于当时来说感觉是一个黑箱，一直理解不了；感谢NodeJS，自己用JS实现了一个简单服务器把逻辑跑通。 VIM的编辑哲学与无鼠标操作吸引了我，为了锻炼自己不畏难的能力，在一次入坑失败后掌握。 有一定基础后开始捡起英语，锻炼自己阅读英文文档、资料，目前基本能通过英语google与阅读文档。 期间走了很多弯路，庆幸始终坚持至今，确定了自己的追求。
             </p>
           </section>
         </div>
@@ -145,6 +142,19 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
   <script src="radarChart.js"></script>
+  <script>
+    let count = 0, timeId
+    let rect = document.querySelector('.avatar')
+    window.onscroll = () => {
+      clearTimeout(timeId)
+      timeId = setTimeout(() => {
+        if (window.pageYOffset === 0) {
+          count -= 360
+          rect.style.transform = `rotate(${count}deg)`
+        }
+      }, 100)
+    }
+  </script>
 </body>
 
 </html>
