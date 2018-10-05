@@ -58,9 +58,9 @@ header > div{
   margin: 0 12px;
   border-radius: 50%;
   box-shadow: 0 0 1px 2px #ccc;
-  background: no-repeat center center url(http://oe68k88iq.bkt.clouddn.com/sean.jpg) #fff;
+  background: no-repeat center center url(./sean.jpg) #fff;
   background-size: contain;
-  
+
   transition: transform 1.5s;
   animation: rotate 1.5s 1;
 }
