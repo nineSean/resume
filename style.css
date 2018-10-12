@@ -141,7 +141,7 @@ main{
   margin-top: 38px;
 }
 
-.portfolio-header,.intro-header,.skills-header{
+.portfolio-header,.intro-header,.skills-header,.self-intro-header{
   color: #000;
   font-size: 1.5em;
   font-weight: bold;
@@ -209,7 +209,7 @@ footer{
 }
 
 .intro-content section{
-  padding: 0 0 15px 80px;
+  padding: 0 0 15px 30px;
   word-break: break-all;
 }
 
@@ -225,7 +225,26 @@ footer{
   letter-spacing: 1px;
 }
 
-.intro-content section>p:before{
+.skills{
+  float: right;
+  width: 400px;
+}
+
+.self-intro{
+  float: left;
+  padding-top: 10px;
+}
+
+.self-intro-content section{
+  padding: 0 80px 15px;
+  word-break: break-all;
+}
+
+.self-intro-content ul{
+  list-style: circle;
+}
+
+.self-intro-content section>*:before{
   content: '+';
   position: absolute;
   left: 0;
@@ -238,8 +257,4 @@ footer{
   font-family: sans-serif;
   text-align: center;
   line-height: 18px;
-}
-.skills{
-  float: right;
-  width: 400px;
 }
