@@ -12,8 +12,10 @@ ul,ol{
   list-style: none;
 }
 a{
-  color: #555;
+  color: #000;
   text-decoration: none;
+}
+a:visited{
 }
 
 /* common */
@@ -28,10 +30,6 @@ a{
 }
 .clearfix{
   zoom: 1;
-}
-h3>a{
-  color: #616;
-  cursor: pointer;
 }
 
 /* main */
@@ -133,10 +131,6 @@ header > div{
   left: 48px;
 }
 
-.personalinfo-content > li:last-child a{
-  color: #616;
-}
-
 main{
   margin-top: 38px;
 }
@@ -175,6 +169,10 @@ main{
   background-color: #345;
 }
 
+.project{
+  margin-bottom: 15px;
+}
+
 .project-header{
   font-size: 1.2em;
   margin-bottom: 5px;
@@ -191,8 +189,8 @@ main{
   background-color: #345;
 }
 
-.project-content{
-  margin-bottom: 15px;
+.project-show>a{
+  font-weight: bold;
 }
 
 footer{
