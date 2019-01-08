@@ -175,7 +175,7 @@ main{
 
 .project-header{
   font-size: 1.2em;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .project-header:before{
@@ -189,8 +189,21 @@ main{
   background-color: #345;
 }
 
+.project-tech{
+  margin-bottom: 5px
+}
+
+.project-tech>b{
+  font-size: 1.1em;
+}
+
 .project-show>a{
   font-weight: bold;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  padding: 0 2px;
+  margin-right: 5px;
 }
 
 footer{
